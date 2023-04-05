@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark .three-d{
+  text-shadow: 0px 5px 0px #533519;
+}
+.three-d{
+  text-shadow: none;
+}
+.theme-heading span{
+  color: #f5bc51;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  .theme-heading span{
+    color: inherit ;
+  }
+
+  .simplebar-scrollbar::before{
+    background-color: white;
+  }
+}
