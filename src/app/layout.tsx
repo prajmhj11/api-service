@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import Providers from "@/components/Providers";
 import Navbar from "@/components/Navbar";
 import { Toast, Toaster } from "@/components/ui/toast";
+import MobileMenu from "@/components/MobileMenu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           <Toaster position="bottom-right" />
           {/* @ts-expect-error Server Component */}
           <Navbar />
+          <MobileMenu />
         </Providers>
 
         {/* Allow more height on mobile devices */}

@@ -1,7 +1,7 @@
 export const nodejs = `const axios = require("axios");
 const options = {
     method: 'POST',
-    url: '${process.env.NEXTAUTH_URL ?? "localhost:3000"}/api/v1/similarity',
+    url: https://api-service-zeta.vercel.app/api/v1/similarity',
     params: {
       text1: 'First text',
       text2: 'Second text'
@@ -18,7 +18,7 @@ axios.request(options).then(function (response) {
 });`;
 
 export const python = `import requests
-url = '${process.env.NEXTAUTH_URL ?? "localhost:3000"}/api/v1/similarity'
+url = https://api-service-zeta.vercel.app/api/v1/similarity'
 api_key = 'YOUR_API_KEY'
 text1 = 'First text'
 text2 = 'Second text'

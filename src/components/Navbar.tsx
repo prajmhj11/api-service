@@ -6,6 +6,7 @@ import SignInButton from "@/components/SignInButton";
 import SignOutButton from "@/components/SignOutButton";
 import ThemeToggle from "@/components/ThemeToggle";
 import { authOptions } from "@/lib/auth";
+import { Github } from "lucide-react";
 
 const Navbar = async ({}) => {
   const session = await getServerSession(authOptions);
@@ -17,7 +18,24 @@ const Navbar = async ({}) => {
           API Service
         </Link>
 
-        <div className="flex gap-4 items-center">
+        <div className="md:hidden">
+          <Link
+            target="_blank"
+            href={"https://github.com/prajmhj11"}
+            className={buttonVariants({ variant: "ghost", size: "sm" })}
+          >
+            <Github className="hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100" />
+          </Link>
+          <ThemeToggle />
+        </div>
+        <div className="hidden md:flex gap-4 items-center">
+          <Link
+            target="_blank"
+            href={"https://github.com/prajmhj11"}
+            className={buttonVariants({ variant: "ghost", size: "sm" })}
+          >
+            <Github className="hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100" />
+          </Link>
           <ThemeToggle />
           <Link
             href={"/documentation"}
@@ -37,7 +55,12 @@ const Navbar = async ({}) => {
               <SignOutButton />
             </>
           ) : (
-            <SignInButton />
+            <Link
+              href={"/login"}
+              className={buttonVariants({ variant: "default" })}
+            >
+              Login
+            </Link>
           )}
         </div>
       </div>
