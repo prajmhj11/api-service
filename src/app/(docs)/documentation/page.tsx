@@ -8,8 +8,8 @@ import DocumentationTabs from "@/components/DocumentationTabs";
 import 'simplebar-react/dist/simplebar.min.css';
 
 export const metadata: Metadata = {
-  title: "Similarity API | Documentation",
-  description: "Free & Open-Source text similarity API",
+  title: "API Service | Documentation",
+  description: "With Free API key, use API service.",
 };
 
 const page: FC = ({}) => {

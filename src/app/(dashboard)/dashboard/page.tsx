@@ -9,8 +9,8 @@ import ApiDashboard from "@/components/ApiDashboard";
 import RequestApiKey from "@/components/RequestApiKey";
 
 export const metadata: Metadata = {
-  title: "Similarity API | Dashboard",
-  description: "Free & Open-Source text similarity API",
+  title: "API Service | Dashboard",
+  description: "Create, Revoke API, also API history",
 };
 
 const page = async ({}) => {
