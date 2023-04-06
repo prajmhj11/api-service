@@ -7,8 +7,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: "API Service | Personal Project",
+  description: "API Service - Create, Revoke API key and Google Authentication",
 };
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,11 +22,10 @@ export default function Home() {
             size={"md"}
             className={"three-d theme-heading text-black dark:text-light-gold"}
           >
-            Easily determine <br /> <span>text similarity.</span>
+            API Service <br /> <span>Personal Project</span>
           </LargeHeading>
           <Paragraph className="max-w-xl lg:text-left">
-            With the text similarity API, you can easily determine the
-            similarity between two pieces of text with a free{" "}
+            With the API Service | Personal Project, you can easily create and revoke free {" "}
             <Link
               href={"/login"}
               className="underline underline-offset-2 text-black dark:text-light-gold"
@@ -43,7 +42,7 @@ export default function Home() {
                 objectFit: "contain",
               }}
               fill
-              src={"/typewriter.png"}
+              src={"/api.png"}
               alt="Hero Image"
             />
           </div>
