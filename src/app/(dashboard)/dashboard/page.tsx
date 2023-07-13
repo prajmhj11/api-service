@@ -1,14 +1,14 @@
 import React from "react";
 
 import type { Metadata } from "next";
-import { getServerSession } from "next-auth";
+import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { notFound } from "next/navigation";
 import { db } from "@/lib/db";
 import ApiDashboard from "@/components/ApiDashboard";
 import RequestApiKey from "@/components/RequestApiKey";
 
-export const runtime = "edge";
+
 
 export const metadata: Metadata = {
   title: "API Service | Dashboard",

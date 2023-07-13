@@ -6,7 +6,7 @@ import Paragraph from "@/components/ui/Paragraph";
 import Link from "next/link";
 import Image from "next/image";
 
-export const runtime = "edge";
+
 
 export const metadata: Metadata = {
   title: "API Service | Personal Project",

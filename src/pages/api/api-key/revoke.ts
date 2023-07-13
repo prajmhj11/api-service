@@ -3,10 +3,9 @@ import { authOptions } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { RevokeApiData } from "@/types/api";
 import { NextApiRequest, NextApiResponse } from "next";
-import { getServerSession } from "next-auth";
+import { getServerSession } from "next-auth/next";
 import { z } from "zod";
 
-export const runtime = "edge";
 
 const handler = async (
   req: NextApiRequest,

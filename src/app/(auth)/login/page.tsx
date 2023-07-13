@@ -6,7 +6,7 @@ import Paragraph from "@/components/ui/Paragraph";
 import Link from "next/link";
 import React, { FC } from "react";
 
-export const runtime = "edge";
+
 
 const page: FC = ({}) => {
   return (

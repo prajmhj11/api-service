@@ -1,6 +1,6 @@
 import { authOptions } from "@/lib/auth";
 import { db } from "@/lib/db";
-import { getServerSession } from "next-auth";
+import { getServerSession } from "next-auth/next";
 import { notFound } from "next/navigation";
 import React, { FC } from "react";
 import { formatDistance } from "date-fns";

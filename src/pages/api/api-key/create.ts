@@ -1,13 +1,13 @@
 import { authOptions } from "@/lib/auth";
 import { NextApiRequest, NextApiResponse } from "next";
-import { getServerSession } from "next-auth";
+import { getServerSession } from "next-auth/next";
 import { CreateApiData } from "@/types/api";
 import { db } from "@/lib/db";
 import { nanoid } from "nanoid";
 import { z } from "zod";
 import { withMethods } from "@/lib/api-middlewares/with-methods";
 
-export const runtime = "edge";
+
 
 const handler = async (
   req: NextApiRequest,

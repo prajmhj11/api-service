@@ -2,7 +2,7 @@ import { NextApiResponseWithSocket } from "@/types/api";
 import { NextApiRequest } from "next";
 import { Server } from "socket.io";
 
-export const runtime = "edge";
+
 
 const SocketHandler = (req: NextApiRequest, res: NextApiResponseWithSocket) => {
   if (res.socket.server.io) {

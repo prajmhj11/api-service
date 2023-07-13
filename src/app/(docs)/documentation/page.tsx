@@ -7,7 +7,7 @@ import DocumentationTabs from "@/components/DocumentationTabs";
 
 import "simplebar-react/dist/simplebar.min.css";
 
-export const runtime = "edge";
+
 
 export const metadata: Metadata = {
   title: "API Service | Documentation",
