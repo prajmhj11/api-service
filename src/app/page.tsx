@@ -6,8 +6,6 @@ import Paragraph from "@/components/ui/Paragraph";
 import Link from "next/link";
 import Image from "next/image";
 
-
-
 export const metadata: Metadata = {
   title: "API Service | Personal Project",
   description: "API Service - Create, Revoke API key and Google Authentication",
@@ -54,3 +52,5 @@ export default function Home() {
     </div>
   );
 }
+
+export const dynamic = "force-static";

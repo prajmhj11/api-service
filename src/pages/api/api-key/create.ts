@@ -7,8 +7,6 @@ import { nanoid } from "nanoid";
 import { z } from "zod";
 import { withMethods } from "@/lib/api-middlewares/with-methods";
 
-
-
 const handler = async (
   req: NextApiRequest,
   res: NextApiResponse<CreateApiData>

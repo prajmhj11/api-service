@@ -6,8 +6,6 @@ import Paragraph from "@/components/ui/Paragraph";
 import Link from "next/link";
 import React, { FC } from "react";
 
-
-
 const page: FC = ({}) => {
   return (
     <div className="absolute inset-0 mx-auto container flex h-screen flex-col items-center justify-center">
@@ -35,3 +33,5 @@ const page: FC = ({}) => {
 };
 
 export default page;
+
+export const dynamic = "force-static";

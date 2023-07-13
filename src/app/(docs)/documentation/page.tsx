@@ -7,8 +7,6 @@ import DocumentationTabs from "@/components/DocumentationTabs";
 
 import "simplebar-react/dist/simplebar.min.css";
 
-
-
 export const metadata: Metadata = {
   title: "API Service | Documentation",
   description: "With Free API key, use API service.",
@@ -28,3 +26,5 @@ const page: FC = ({}) => {
 };
 
 export default page;
+
+export const dynamic = "force-static";
