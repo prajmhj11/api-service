@@ -7,6 +7,8 @@ import { nanoid } from "nanoid";
 import { z } from "zod";
 import { withMethods } from "@/lib/api-middlewares/with-methods";
 
+export const runtime = "edge";
+
 const handler = async (
   req: NextApiRequest,
   res: NextApiResponse<CreateApiData>
@@ -48,7 +50,6 @@ const handler = async (
       error: null,
       createdApiKey,
     });
-    
   } catch (error) {
     if (error instanceof z.ZodError) {
       return res.status(400).json({

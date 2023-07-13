@@ -5,7 +5,9 @@ import LargeHeading from "@/components/ui/LargeHeading";
 import Paragraph from "@/components/ui/Paragraph";
 import DocumentationTabs from "@/components/DocumentationTabs";
 
-import 'simplebar-react/dist/simplebar.min.css';
+import "simplebar-react/dist/simplebar.min.css";
+
+export const runtime = "edge";
 
 export const metadata: Metadata = {
   title: "API Service | Documentation",

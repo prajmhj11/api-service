@@ -8,6 +8,8 @@ import { db } from "@/lib/db";
 import ApiDashboard from "@/components/ApiDashboard";
 import RequestApiKey from "@/components/RequestApiKey";
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "API Service | Dashboard",
   description: "Create, Revoke API, also API history",

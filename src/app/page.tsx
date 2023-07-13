@@ -6,6 +6,8 @@ import Paragraph from "@/components/ui/Paragraph";
 import Link from "next/link";
 import Image from "next/image";
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "API Service | Personal Project",
   description: "API Service - Create, Revoke API key and Google Authentication",
@@ -25,7 +27,8 @@ export default function Home() {
             API Service <br /> <span>Personal Project</span>
           </LargeHeading>
           <Paragraph className="max-w-xl lg:text-left">
-            With the API Service | Personal Project, you can easily create and revoke free {" "}
+            With the API Service | Personal Project, you can easily create and
+            revoke free{" "}
             <Link
               href={"/login"}
               className="underline underline-offset-2 text-black dark:text-light-gold"
