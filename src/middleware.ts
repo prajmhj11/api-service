@@ -4,10 +4,7 @@ import { getToken } from "next-auth/jwt";
 import { NextRequestWithAuth, withAuth } from "next-auth/middleware";
 import { NextResponse } from "next/server";
 
-const redis = new Redis({
-  url: process.env.REDIS_URL,
-  token: process.env.REDIS_SECRET,
-});
+const redis = Redis.fromEnv();
 
 const ratelimit = new Ratelimit({
   redis,
