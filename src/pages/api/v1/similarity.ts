@@ -3,6 +3,8 @@ import { db } from "@/lib/db";
 import { NextApiRequest, NextApiResponse } from "next";
 import { z } from "zod";
 
+export const runtime = 'edge';
+
 const reqSchema = z.object({
   text1: z.string().max(1000),
   text2: z.string().max(1000),

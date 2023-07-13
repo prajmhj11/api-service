@@ -6,6 +6,8 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { getServerSession } from "next-auth";
 import { z } from "zod";
 
+export const runtime = 'edge';
+
 const handler = async (
   req: NextApiRequest,
   res: NextApiResponse<RevokeApiData>
